@@ -1,0 +1,246 @@
+{
+  "resolved_at": "2026-07-31",
+  "resolver": "C:/Users/gscher/laaa-geo/capabilities/resolveAddress.mjs",
+  "review_note": "All plotted pins returned ROOFTOP precision with needs_review=false.",
+  "entries": [
+    {
+      "property": "camarillo",
+      "category": "subject",
+      "order": 0,
+      "address": "11168 Camarillo St, North Hollywood, CA 91602",
+      "lat": 34.1573332,
+      "lng": -118.3746359,
+      "place_id": "ChIJDYYaEB6-woARAAoNHs17qO4",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 1,
+      "address": "4870 Bakman Ave, North Hollywood, CA 91601",
+      "lat": 34.1596664,
+      "lng": -118.3772239,
+      "place_id": "ChIJA7GzXvaVwoARqCGGRrI3fUo",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 2,
+      "address": "11205 Peach Grove St, North Hollywood, CA 91601",
+      "lat": 34.1593619,
+      "lng": -118.374738,
+      "place_id": "ChIJYSJG3fWVwoARbs-DPwzIj60",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 3,
+      "address": "11508 Moorpark St, North Hollywood, CA 91602",
+      "lat": 34.1500635,
+      "lng": -118.3826519,
+      "place_id": "ChIJx2eWvQS-woARJUBUQcoIsjs",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 4,
+      "address": "10935 Peach Grove St, North Hollywood, CA 91601",
+      "lat": 34.1593013,
+      "lng": -118.3692513,
+      "place_id": "ChIJqRrJACC-woARz2HHYOXV4mI",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 5,
+      "address": "10602 Landale St, Toluca Lake, CA 91602",
+      "lat": 34.151024,
+      "lng": -118.361846,
+      "place_id": "ChIJrUiyzCS-woAReoSaEFXtUO0",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 6,
+      "address": "5326 Cahuenga Blvd, North Hollywood, CA 91601",
+      "lat": 34.1674901,
+      "lng": -118.3612259,
+      "place_id": "ChIJ-bQA3I6VwoARjYs-fQ5iiB8",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 7,
+      "address": "11100 Camarillo St, North Hollywood, CA 91602",
+      "lat": 34.1573333,
+      "lng": -118.3724711,
+      "place_id": "ChIJuxKxyh--woAResyTpQI72NQ",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "sold",
+      "order": 8,
+      "address": "4300 Tujunga Ave, Studio City, CA 91604",
+      "lat": 34.1479602,
+      "lng": -118.378644,
+      "place_id": "ChIJYet3ixq-woARDCbGpa1TWR8",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 1,
+      "address": "11601 Moorpark St, North Hollywood, CA 91602",
+      "lat": 34.1506251,
+      "lng": -118.3857525,
+      "place_id": "ChIJIycg8wO-woARsMToOoa05d0",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 2,
+      "address": "10806 Sarah St, North Hollywood, CA 91602",
+      "lat": 34.1537691,
+      "lng": -118.3661401,
+      "place_id": "ChIJP90rtiO-woARPvJzKe0RS0A",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 3,
+      "address": "11162 Camarillo St, North Hollywood, CA 91602",
+      "lat": 34.1573318,
+      "lng": -118.3743862,
+      "place_id": "ChIJaarcEB6-woARq_OoRUzSVq0",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 4,
+      "address": "10757 Hortense St, North Hollywood, CA 91602",
+      "lat": 34.1552616,
+      "lng": -118.3657655,
+      "place_id": "ChIJ2VX6YiG-woAR1gfIMrcJ42g",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 5,
+      "address": "10248 Riverside Dr, North Hollywood, CA 91602",
+      "lat": 34.1519476,
+      "lng": -118.3544342,
+      "place_id": "ChIJ6ZlBzjG-woARcF3-co0eOy0",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 6,
+      "address": "11255 Camarillo St, North Hollywood, CA 91602",
+      "lat": 34.1579035,
+      "lng": -118.3764092,
+      "place_id": "ChIJIWN1HPaVwoARVNyiLkMHVhI",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 7,
+      "address": "4406 Cahuenga Blvd, Toluca Lake, CA 91602",
+      "lat": 34.1508217,
+      "lng": -118.3612721,
+      "place_id": "ChIJTXz4Kzu-woARGPDzG9oyf84",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "rent",
+      "order": 8,
+      "address": "11100 Riverside Dr, Toluca Lake, CA 91602",
+      "lat": 34.1520268,
+      "lng": -118.3727654,
+      "place_id": "ChIJXUok4Bi-woARISh5uoPH37A",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "active",
+      "order": 1,
+      "address": "11017 Hartsook St, North Hollywood, CA 91601",
+      "lat": 34.164205,
+      "lng": -118.3712792,
+      "place_id": "ChIJh-8kYfOVwoARWWA_u9LVPWo",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "active",
+      "order": 2,
+      "address": "4173 Fair Ave, North Hollywood, CA 91602",
+      "lat": 34.1618389,
+      "lng": -118.3748858,
+      "place_id": "ChIJ9a7pG_SVwoARtWTOl0zgIbI",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "active",
+      "order": 3,
+      "address": "4441 Tujunga Ave, Studio City, CA 91602",
+      "lat": 34.1515076,
+      "lng": -118.3793311,
+      "place_id": "ChIJMQR2Yxu-woAR4E5Q_EgkrLs",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    },
+    {
+      "property": "camarillo",
+      "category": "active",
+      "order": 4,
+      "address": "6651 Beck Ave, North Hollywood, CA 91606",
+      "lat": 34.1917731,
+      "lng": -118.3837772,
+      "place_id": "ChIJfS5qKdKVwoARLlW6ISSfBSM",
+      "precision": "ROOFTOP",
+      "needs_review": false
+    }
+  ],
+  "renders": {
+    "images/maps-camarillo-sale-comps.png": "f375c8094f168d24d00b375d661ddf9568f4e23ccf155af0874fac13560e516a",
+    "images/maps-camarillo-sale-comps-tall.png": "72a9e98a47e9985b1a871a0c98505156a27badac5a539971f8c16b39823ae07d",
+    "images/maps-camarillo-rent-comps.png": "965efc533ba3cfe27301f27ac360bf381ff67283c55ee0437b25975f2f3af2dd",
+    "images/maps-camarillo-rent-comps-tall.png": "5e9e40285e4b94ff91bc40116ad3d19f2deabc4d61502eef18877938e372baf1",
+    "images/maps-camarillo-active-comps.png": "d5cf5d70d26e6842580e5627ecfced39a5e6a59dda9903bf1bb9ebad6330c3c8",
+    "images/maps-camarillo-active-comps-tall.png": "6f714fba3dbe18eb73a3f11557e77aa44d1848222ee15d57db0d015a66aa1426"
+  }
+}

@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="Broker Opinion of Value - 11168 Camarillo St">
 <meta property="og:description" content="8-Unit Multifamily Investment - North Hollywood, CA 91602 | LAAA Team - Marcus &amp; Millichap">
-<meta property="og:image" content="https://11168-camarillo.laaa.com/images/hero_streetview.jpg">
+<meta property="og:image" content="https://11168-camarillo.laaa.com/og.jpg">
 <meta property="og:url" content="https://11168-camarillo.laaa.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Broker Opinion of Value - 11168 Camarillo St">
 <meta name="twitter:description" content="8-Unit Multifamily Investment - North Hollywood, CA 91602 | LAAA Team - Marcus &amp; Millichap">
-<meta name="twitter:image" content="https://11168-camarillo.laaa.com/images/hero_streetview.jpg">
+<meta name="twitter:image" content="https://11168-camarillo.laaa.com/og.jpg">
 <title>Broker Opinion of Value - 11168 Camarillo St</title>
 <link rel="icon" type="image/png" href="images/LAAA_Team_Blue.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,12 +41,9 @@ h1,h2,h3 { font-family: 'DM Serif Display', Georgia, serif; }
 .cover-headshot-wrap { text-align: center; }
 .client-greeting { font-size: 14px; font-weight: 500; color: #C5A258; letter-spacing: 1px; margin-top: 16px; }
 .gold-line { height: 3px; background: #C5A258; }
-.pdf-float-btn { position: fixed; bottom: 24px; right: 24px; z-index: 9999; padding: 14px 28px; background: #C5A258; color: #1B3A5C; font-size: 14px; font-weight: 700; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.35); display: flex; align-items: center; gap: 8px; }
-.pdf-float-btn:hover { background: #fff; transform: translateY(-2px); }
-.pdf-float-btn svg { width: 18px; height: 18px; fill: currentColor; }
 .toc-nav { background: #1B3A5C; padding: 0 12px; display: flex; flex-wrap: nowrap; justify-content: center; align-items: stretch; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); overflow-x: auto; scrollbar-width: none; }
 .toc-nav::-webkit-scrollbar { display: none; }
-.toc-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 11px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; padding: 12px 10px; border-bottom: 2px solid transparent; white-space: nowrap; display: flex; align-items: center; }
+.toc-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 11px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; padding: 10px; min-height: 44px; border-bottom: 2px solid transparent; white-space: nowrap; display: flex; align-items: center; scroll-margin-inline: 16px; }
 .toc-nav a:hover { color: #fff; background: rgba(197,162,88,0.12); border-bottom-color: rgba(197,162,88,0.4); }
 .toc-nav a.toc-active { color: #C5A258; font-weight: 600; border-bottom-color: #C5A258; }
 .section { padding: 50px 40px; max-width: 1100px; margin: 0 auto; }
@@ -124,8 +121,9 @@ td.num, th.num { text-align: right; }
 .loc-left p { font-size: 14px; line-height: 1.7; margin-bottom: 14px; }
 .loc-wide-map { width: 100%; height: 260px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-top: 24px; }
 .loc-wide-map img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.loc-wide-map.comp-map { background: #e8e4d8; }
-.loc-wide-map.comp-map img { object-fit: contain; }
+.loc-wide-map.comp-map { background: #e8e4d8; height: auto !important; aspect-ratio: 3 / 1; }
+.loc-wide-map.comp-map picture { display: block; width: 100%; height: 100%; }
+.loc-wide-map.comp-map img { display: block; object-fit: cover; }
 .prop-grid-4 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .improv-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: start; margin-top: 24px; }
 .improv-list { list-style: none; }
@@ -177,7 +175,7 @@ td.num, th.num { text-align: right; }
 .bp-closing { font-size: 13px; color: #444; margin-top: 12px; font-style: italic; }
 .narrative { font-size: 14px; line-height: 1.7; color: #444; margin-bottom: 16px; }
 .embed-map-wrap { position: relative; width: 100%; margin-bottom: 24px; border-radius: 8px; overflow: hidden; }
-.embed-map-wrap iframe { display: block; width: 100%; height: 420px; border: 0; }
+.embed-map-wrap img { display: block; width: 100%; height: auto; }
 .page-break-marker { height: 4px; background: repeating-linear-gradient(90deg, #ddd 0, #ddd 8px, transparent 8px, transparent 16px); max-width: 1100px; margin: 0 auto; }
 .footer { background: #1B3A5C; color: #fff; padding: 50px 40px; text-align: center; }
 .footer-logo { width: 200px; margin-bottom: 30px; }
@@ -203,21 +201,19 @@ td.num, th.num { text-align: right; }
   .bio-grid { grid-template-columns: 1fr; gap: 16px; }
   .team-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-team { flex-direction: column; align-items: center; gap: 30px; }
-  .embed-map-wrap iframe { height: 320px; }
+  .loc-wide-map.comp-map { aspect-ratio: 4 / 3; }
   .slide-stage { height: 300px; } .slide-thumbs img { width: 76px; height: 50px; }
-  .pdf-float-btn { padding: 10px 18px; font-size: 12px; bottom: 16px; right: 16px; }
-  .toc-nav a { font-size: 10px; padding: 10px 7px; }
+  .toc-nav a { font-size: 10px; padding: 8px 7px; min-height: 44px; }
 }
 @media (max-width: 420px) {
   .cover-title { font-size: 28px; } .cover-stat-value { font-size: 22px; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .metrics-grid-4 { grid-template-columns: 1fr 1fr; } .metric-value { font-size: 20px; }
-  .section { padding: 22px 12px; }
 }
 @media print {
   @page { size: letter landscape; margin: 0.4in 0.5in; }
   body { font-size: 11px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .pdf-float-btn, .toc-nav, .embed-map-wrap, .page-break-marker, .lightbox { display: none !important; }
+  .toc-nav, .embed-map-wrap, .page-break-marker, .lightbox { display: none !important; }
   .cover { min-height: 7.5in; page-break-after: always; }
   .cover-headshots { display: flex !important; }
   .section { padding: 20px 0; page-break-before: always; }
@@ -227,18 +223,13 @@ td.num, th.num { text-align: right; }
   .os-two-col { page-break-before: always; }
   .summary-page { page-break-before: always; }
   .price-reveal { page-break-before: always; }
-  #prop-details, #photos, #property-info, #sale-comps, #on-market, #marketing { page-break-before: always; }
+  #prop-details, #photos, #property-info, #rent-comps, #sale-comps, #on-market, #marketing { page-break-before: always; }
   .footer { page-break-before: always; }
   table { font-size: 10px; } th { padding: 5px 8px; font-size: 9px; } td { padding: 4px 8px; }
 }
 </style>
 </head>
 <body>
-
-<a href="/11168-camarillo-bov.pdf" class="pdf-float-btn" target="_blank">
-  <svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
-  Download PDF
-</a>
 
 <!-- COVER -->
 <div class="cover">
@@ -273,6 +264,7 @@ td.num, th.num { text-align: right; }
   <a href="#prop-details">Property</a>
   <a href="#photos">Photos</a>
   <a href="#property-info">Buyer Profile</a>
+  <a href="#rent-comps">Rent Comps</a>
   <a href="#sale-comps">Sale Comps</a>
   <a href="#on-market">On-Market</a>
   <a href="#financials">Financials</a>
@@ -286,18 +278,18 @@ td.num, th.num { text-align: right; }
   <div class="section-divider"></div>
   <div class="tr-tagline"><span style="display:block;font-size:1.1em;font-weight:700;margin-bottom:4px;">LAAA Team of Marcus &amp; Millichap</span>Expertise, Execution, Excellence.</div>
   <div class="metrics-grid-4">
-    <div class="metric-card"><span class="metric-value">460+</span><span class="metric-label">Closed Transactions</span></div>
-    <div class="metric-card"><span class="metric-value">$1.47B+</span><span class="metric-label">Total Sales Volume</span></div>
-    <div class="metric-card"><span class="metric-value">4,200+</span><span class="metric-label">Units Sold</span></div>
+    <div class="metric-card"><span class="metric-value">490+</span><span class="metric-label">Closed Transactions</span></div>
+    <div class="metric-card"><span class="metric-value">$1.5B+</span><span class="metric-label">Total Sales Volume</span></div>
+    <div class="metric-card"><span class="metric-value">4,600+</span><span class="metric-label">Units Sold</span></div>
     <div class="metric-card"><span class="metric-value">#1</span><span class="metric-label">Most Active &middot; LA County</span></div>
   </div>
   <div class="embed-map-wrap">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1ewCjzE3QX9p6m2MqK-md8b6fZitfIzU" loading="lazy" allowfullscreen></iframe>
+    <img src="images/closings-map.png" alt="LAAA Team transaction map" loading="lazy">
   </div>
   <div class="tr-map-print"><img src="images/closings-map.png" alt="LAAA Closings Map"></div>
   <div class="tr-service-quote">
     <h3>"We Didn't Invent Great Service, We Just Work Relentlessly to Provide It."</h3>
-    <p>Since 2013, the LAAA Team has closed 460+ multifamily transactions totaling $1.47B+ in volume across Los Angeles, Ventura, and Santa Barbara counties, with a particular depth in the southern San Fernando Valley submarkets of North Hollywood, Toluca Lake, Studio City, and Valley Village.</p>
+    <p>Since 2013, the LAAA Team has closed more than 490 transactions totaling over $1.5 billion in volume and 4,600 units across Southern California, with particular depth in North Hollywood, Toluca Lake, Studio City, and Valley Village.</p>
     <p>Our practice is built on disciplined underwriting, the deepest comparable-sales dataset in the submarket, and a marketing engine that reaches every active multifamily buyer in Los Angeles. We advise owners on when and how to sell - not just whether - and we price to clear, not to languish.</p>
     <p>For 11168 Camarillo St, that means an evidence-based opinion of value anchored in recent North Hollywood and Toluca Lake vintage apartment sales - including an eight-unit, 1962-built sale two blocks away - presented with the same rigor we would bring to defending the price against a buyer's due-diligence challenge.</p>
   </div>
@@ -313,10 +305,10 @@ td.num, th.num { text-align: right; }
   <div class="bio-grid">
     <div class="bio-card"><img class="bio-headshot" src="images/glen-scher-headshot.jpg" alt="Glen Scher"><div>
       <div class="bio-name">Glen Scher</div><div class="bio-title">Senior Managing Director Investments</div>
-      <div class="bio-text">Co-founder of the LAAA Team and one of the most active multifamily brokers in Los Angeles, with 450+ transactions and $1.4B+ in closed sales. A southern San Fernando Valley market specialist since 2014, Glen built his early reputation in Toluca Lake, Studio City, and Valley Village - the exact submarket of 11168 Camarillo St.</div></div></div>
+      <div class="bio-text">Co-founder of the LAAA Team and a Southern San Fernando Valley market specialist since 2014, Glen has built deep experience across Toluca Lake, Studio City, Valley Village, and North Hollywood.</div></div></div>
     <div class="bio-card"><img class="bio-headshot" src="images/filip-niculete-headshot.jpg" alt="Filip Niculete"><div>
       <div class="bio-name">Filip Niculete</div><div class="bio-title">Senior Managing Director Investments</div>
-      <div class="bio-text">Co-founder of the LAAA Team and one of Southern California's top multifamily brokers. Since 2011, Filip has built a reputation for execution, integrity, and relentless work ethic, helping lead the team to $1.4B+ in closed transactions while consistently leading the market in active inventory.</div></div></div>
+      <div class="bio-text">Co-founder of the LAAA Team, Filip has specialized in multifamily investment sales since 2011 and is known for disciplined execution, market knowledge, and direct owner representation.</div></div></div>
   </div>
   <div class="team-grid">
     <div class="team-card"><img class="team-headshot" src="images/aida-memary-scher-headshot.jpg" alt="Aida Memary Scher"><div class="team-card-name">Aida Memary Scher</div><div class="team-card-title">Associate Director</div></div><div class="team-card"><img class="team-headshot" src="images/luka-leader-headshot.jpg" alt="Luka Leader"><div class="team-card-name">Luka Leader</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/morgan-wetmore-headshot.jpg" alt="Morgan Wetmore"><div class="team-card-name">Morgan Wetmore</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/logan-ward-headshot.jpg" alt="Logan Ward"><div class="team-card-name">Logan Ward</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/alexandro-tapia-headshot.jpg" alt="Alexandro Tapia"><div class="team-card-name">Alexandro Tapia</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/blake-lewitt-headshot.jpg" alt="Blake Lewitt"><div class="team-card-name">Blake Lewitt</div><div class="team-card-title">Associate Investments</div></div><div class="team-card"><img class="team-headshot" src="images/mike-palade-headshot.jpg" alt="Mike Palade"><div class="team-card-name">Mike Palade</div><div class="team-card-title">Agent Assistant</div></div><div class="team-card"><img class="team-headshot" src="images/tony-dang-headshot.jpg" alt="Tony H. Dang"><div class="team-card-name">Tony H. Dang</div><div class="team-card-title">Business Operations Manager</div></div><div class="team-card"><img class="team-headshot" src="images/tirajeh-vossoughi-horton-headshot.jpg" alt="Tirajeh Vossoughi-Horton"><div class="team-card-name">Tirajeh Vossoughi-Horton</div><div class="team-card-title">Intern</div></div>
@@ -327,7 +319,7 @@ td.num, th.num { text-align: right; }
       &bull; <strong>National Achievement Award</strong> - multiple years, both partners<br>
       &bull; <strong>#1 Most Active Multifamily Team in LA County</strong> - CoStar 2019-2021<br>
       &bull; <strong>Sales Recognition Award</strong> - every year since 2016<br>
-      &bull; <strong>40+ transactions per year</strong> - one of SoCal's most active groups
+      &bull; <strong>490+ closed transactions</strong> - more than $1.5 billion in sales volume
     </p></div>
   <div class="press-strip"><span class="press-strip-label">As Featured In</span><span class="press-logo">BISNOW</span><span class="press-logo">YAHOO FINANCE</span><span class="press-logo">CONNECT CRE</span><span class="press-logo">SFVBJ</span><span class="press-logo">THE PINNACLE LIST</span></div>
 </div>
@@ -339,15 +331,15 @@ td.num, th.num { text-align: right; }
   <div class="section-subtitle">Every Active LA Multifamily Buyer, Within Days of Launch</div>
   <div class="section-divider"></div>
   <div class="metrics-grid-4">
-    <div class="metric-card"><span class="metric-value">23,795+</span><span class="metric-label">Email Subscribers</span></div>
-    <div class="metric-card"><span class="metric-value">26.1%</span><span class="metric-label">Avg Open Rate</span></div>
-    <div class="metric-card"><span class="metric-value">7 Days</span><span class="metric-label">To Full Market Reach</span></div>
-    <div class="metric-card"><span class="metric-value">10</span><span class="metric-label">Listing Platforms</span></div>
+    <div class="metric-card"><span class="metric-value">23,500+</span><span class="metric-label">Active Email Subscribers</span></div>
+    <div class="metric-card"><span class="metric-value">36,000+</span><span class="metric-label">Owner &amp; Investor Contacts</span></div>
+    <div class="metric-card"><span class="metric-value">100+</span><span class="metric-label">Targeted Buyer Calls</span></div>
+    <div class="metric-card"><span class="metric-value">10,000+</span><span class="metric-label">Average Property Views</span></div>
   </div>
   <div class="mkt-quote">"We are proactive marketers, not reactive. Your property goes in front of every active buyer in the market - by email, by phone, and on every platform investors use to find deals."</div>
   <div class="mkt-channels">
     <div class="mkt-channel"><h4>Direct &amp; Database</h4><ul>
-      <li>23,795-subscriber Mailchimp list (26.1% avg open)</li>
+      <li>23,500+ active email subscribers and 36,000+ owner and investor contacts</li>
       <li>APTO / Salesforce investor database</li>
       <li>Direct outreach to qualified 1031 and active eight-unit buyers</li></ul></div>
     <div class="mkt-channel"><h4>Listing Platforms</h4><ul>
@@ -381,19 +373,19 @@ td.num, th.num { text-align: right; }
         <div class="metric-card"><span class="metric-value">27%</span><span class="metric-label">Rental Upside</span></div>
       </div>
       <div class="inv-text">
-        <p>11168 Camarillo St is a 1962-built, two-story eight-unit apartment building in the coveted 91602 ZIP - the North Hollywood pocket bordering Toluca Lake, blocks from the NoHo Arts District. The unit mix is an even split of four 2BD/2BA and four 1BD/1BA units totaling 7,298 SF on a 7,500 SF LAR3 lot, with a laundry room and carport parking.</p>
+        <p>11168 Camarillo St is a 1962-built, two-story eight-unit apartment building in the 91602 pocket of North Hollywood bordering Toluca Lake and near the NoHo Arts District. The property includes five 1BD/1BA units, two 2BD/2BA units, and one 3BD/2BA unit totaling 7,298 SF on a 7,500 SF LAR3 lot, with a laundry room and carport parking.</p>
         <p>The current owner has systematically reinvested in the building's major systems: a completed LAMC Division 93 soft-story retrofit (Certificate of Compliance issued January 2021), building-wide replacement of the original Zinsco electrical sub-panels with new Square D 100-amp panels (2024), a new water supply line to the units (2024), and wall-heater replacements across multiple units (2024). Turned units have been remodeled with new kitchens, quartz counters, stainless appliances, updated baths, and vinyl-plank flooring.</p>
-        <p>In-place rents average just $1,768/unit against proven in-building turn rents of $2,496 (2BD) and a $1,950 asking rent on the remodeled vacant 1BD - a documented 27% loss-to-lease. The result is a classic RSO value-add: durable current income, permit-verified capital systems, and a clear, evidenced path to a 7.50% pro forma cap rate.</p>
+        <p>The July 2026 owner rent roll totals $14,143 per month, including one vacant unit at its $1,950 advertised rent. Nearby achieved and current market evidence supports conservative underwritten rents of $1,950 for 1BD units, $2,500 for 2BD units, and $3,200 for the 3BD unit, producing approximately 27% gross rental upside.</p>
       </div>
     </div>
     <div class="inv-right">
       <div class="inv-photo"><img src="images/photo01.jpg" alt="Remodeled kitchen"></div>
       <div class="inv-highlights"><h4>Investment Highlights</h4><ul>
-        <li><strong>27% documented rental upside</strong> - in-place $14,143/mo vs $18,000/mo at proven in-building turn rents</li>
+        <li><strong>27% supported rental upside</strong> - in-place $14,143/mo vs $17,950/mo at conservative market rents</li>
         <li><strong>Soft-story retrofit complete</strong> - LAMC Div. 93 Certificate of Compliance issued 1/27/2021; no seismic overhang</li>
         <li><strong>2024 systems reinvestment</strong> - Zinsco panels replaced with Square D 100A, new water supply line, wall-heater changeouts (all permitted)</li>
         <li><strong>Prime 91602 pocket</strong> - Toluca Lake-adjacent, blocks to the NoHo Arts District and Metro B Line</li>
-        <li><strong>Proven turn economics</strong> - remodeled 2BD achieved $2,496; remodeled vacant 1BD asking $1,950</li>
+        <li><strong>Current rent evidence</strong> - the owner rent roll includes a $2,496 in-place rent and a remodeled vacancy advertised at $1,950</li>
       </ul></div>
     </div>
   </div>
@@ -407,16 +399,14 @@ td.num, th.num { text-align: right; }
   <div class="section-divider"></div>
   <div class="loc-grid">
     <div class="loc-left">
-      <p>The subject sits in the 91602 ZIP, the most desirable corner of North Hollywood - the pocket that shares its ZIP code with Toluca Lake and borders Riverside Drive's shopping and dining district. Camarillo Street is a quiet residential block west of Lankershim Boulevard, walking distance to the NoHo Arts District's theaters, restaurants, and nightlife.</p>
-      <p>Residents are minutes from the Metro B (Red) Line's North Hollywood terminus - the Valley's primary rail link to Hollywood and Downtown - and the NoHo West retail center. Universal Studios, Warner Bros., and Disney are all within a 10-minute drive, anchoring an entertainment-industry renter base, with quick connections to the 101, 134, and 170 freeways.</p>
-      <p>North Hollywood remains one of the Valley's strongest rental submarkets: multi-billion-dollar transit-oriented development around the NoHo station, sustained studio employment, and a renter pool that consistently absorbs renovated vintage units at premium rents - the exact dynamic the subject's remodeled units are already proving.</p>
+      <p>The subject sits in the 91602 ZIP, the North Hollywood pocket adjoining Toluca Lake and Riverside Drive's shopping and dining district. Camarillo Street is a quiet residential block west of Lankershim Boulevard, within walking distance of the NoHo Arts District's theaters, restaurants, and nightlife.</p>
+      <p>Residents are minutes from the Metro B (Red) Line's North Hollywood terminus - the Valley's primary rail link to Hollywood and Downtown - and the NoHo West retail center. Universal Studios, Warner Bros., and Disney are a short drive away, anchoring an entertainment-industry renter base, with quick connections to the 101, 134, and 170 freeways.</p>
+      <p>North Hollywood benefits from major transit-oriented development around the NoHo station, sustained studio employment, and demonstrated demand for renovated vintage units - the same dynamic reflected in the property's achieved rents and nearby rent evidence.</p>
     </div>
     <div class="loc-right">
       <table class="info-table"><thead><tr><th colspan="2">Location Details</th></tr></thead><tbody>
         <tr><td>Submarket</td><td>North Hollywood (91602)</td></tr>
         <tr><td>ZIP</td><td>91602 (shared w/ Toluca Lake)</td></tr>
-        <tr><td>Median HH Income</td><td>$97,994</td></tr>
-        <tr><td>Median Gross Rent</td><td>$2,226/mo</td></tr>
         <tr><td>Major Employers</td><td>Universal, Warner Bros., Disney</td></tr>
         <tr><td>Transit</td><td>Metro B Line - NoHo Station</td></tr>
         <tr><td>Freeway Access</td><td>101 / 134 / 170</td></tr>
@@ -438,7 +428,7 @@ td.num, th.num { text-align: right; }
       <tr><td>Units</td><td>8</td></tr>
       <tr><td>Year Built</td><td>1962</td></tr>
       <tr><td>Building SF</td><td>7,298</td></tr>
-      <tr><td>Unit Mix</td><td>4x 2BD/2BA, 4x 1BD/1BA</td></tr>
+      <tr><td>Unit Mix</td><td>5x 1BD/1BA, 2x 2BD/2BA, 1x 3BD/2BA</td></tr>
       <tr><td>Stories</td><td>2</td></tr>
       <tr><td>Parking</td><td>Attached carport</td></tr>
     </tbody></table></div>
@@ -513,25 +503,79 @@ td.num, th.num { text-align: right; }
   <div class="buyer-split">
     <div class="buyer-split-left"><h3 class="sub-heading">Target Buyer Profile</h3>
       <div class="obj-item"><p class="obj-q">1031 Exchange Buyers</p><p class="obj-a">Investors trading into a stabilized Valley asset with documented upside and the expensive systems work - seismic and electrical - already complete and permitted.</p></div>
-      <div class="obj-item"><p class="obj-q">Private Local Value-Add Investors</p><p class="obj-a">Hands-on NoHo/Valley operators who understand RSO turnover economics and can execute the proven $2,496/2BD, $1,950/1BD renovation playbook unit by unit.</p></div>
+      <div class="obj-item"><p class="obj-q">Private Local Value-Add Investors</p><p class="obj-a">Hands-on NoHo and Valley operators who understand RSO turnover economics and can execute a measured interior renovation program as units become available.</p></div>
       <div class="obj-item"><p class="obj-q">First-Time Multifamily Buyers</p><p class="obj-a">Buyers stepping up from smaller product who want an 8-unit with real scale, laundry income, and a de-risked capital profile in a submarket they know.</p></div>
-      <p class="bp-closing">The combination of a prime 91602 address, permit-verified capital improvements, and 27% documented upside broadens the buyer pool well beyond a typical vintage eight-unit.</p>
+      <p class="bp-closing">The combination of a 91602 address, permit-verified capital improvements, and approximately 27% supported rental upside broadens the buyer pool beyond a typical vintage eight-unit.</p>
     </div>
     <div class="buyer-split-right"><h3 class="sub-heading">Anticipated Objections</h3>
-      <div class="obj-item"><p class="obj-q">"Three units are renting under $1,400."</p><p class="obj-a">That is the opportunity, not the flaw: units 4, 5, and 6 average $1,306 against a proven $1,950 remodeled 1BD ask in the same building. RSO permits annual increases plus full vacancy decontrol at turnover - and the in-building turn economics are already demonstrated, not projected.</p></div>
-      <div class="obj-item"><p class="obj-q">"It's RSO."</p><p class="obj-a">So are four of the six sold comps - pre-1978 City of LA buildings governed by the same ordinance. RSO is priced into the submarket; what is not priced in everywhere is a completed soft-story retrofit and 2024 electrical.</p></div>
-      <div class="obj-item"><p class="obj-q">"The current cap rate is under 5%."</p><p class="obj-a">At $1,915,000 the in-place cap is 5.25% with taxes fully reassessed - and 7.50% pro forma at documented turn rents. The nearest sold comp, an unrenovated 1962 eight-unit two blocks away, traded at $238/SF; the subject asks $262/SF with its major systems done and remodeled units proving the rent thesis.</p></div>
+      <div class="obj-item"><p class="obj-q">"Three units are renting under $1,400."</p><p class="obj-a">Units 4, 5, and 6 average $1,306 per month, while the owner is advertising the renovated vacancy at $1,950. That spread, together with the external rent evidence shown next, supports a patient turnover strategy under the applicable rent regulations.</p></div>
+      <div class="obj-item"><p class="obj-q">"It's RSO."</p><p class="obj-a">Rent regulation is a familiar feature of pre-1978 City of Los Angeles apartment investments and is reflected in the comparable market. The completed soft-story retrofit and recent electrical work reduce two common capital concerns for buyers of this vintage.</p></div>
+      <div class="obj-item"><p class="obj-q">"How will buyers view the current income?"</p><p class="obj-a">The in-place income is supported by the owner's July 2026 rent roll. The following Rent Comps section supports the conservative market-rent assumptions, and the valuation is presented only after the comparable evidence.</p></div>
     </div>
   </div>
+</div>
+
+<!-- RENT COMPS -->
+<!--
+Rent comp sources verified 2026-07-31:
+11601 Moorpark, 10806 Sarah, and 11162 Camarillo achieved rents:
+CoStar/Showcase rent-comp report, accessed 2026-07-31 (retained in the audit evidence).
+10757 Hortense current and prior achieved rent:
+https://www.compass.com/homedetails/10757-Hortense-St-Unit-303-North-Hollywood-CA-91602/1K8C50_pid/
+10248 Riverside current asking rent:
+https://www.zillow.com/homedetails/10248-Riverside-Dr-APT-D-North-Hollywood-CA-91602/461797813_zpid/
+11255 Camarillo current asking rent:
+https://www.zumper.com/apartment-buildings/p1117029/11255-c-mid-town-north-hollywood-los-angeles-ca
+4406 Cahuenga achieved/expired rent:
+https://www.renthop.com/listings/4406-cahuenga-boulevard/101/75799377
+Palermo Villas current asking rent:
+https://www.apartmentfinder.com/California/Toluca-Lake-Apartments/Palermo-Villas-Apartments-qlgbqhz
+-->
+<div class="page-break-marker"></div>
+<div class="section section-alt" id="rent-comps">
+  <div class="section-title">Rent Comparables</div>
+  <div class="section-subtitle">Achieved and Current Market Evidence &middot; Toluca Lake / North Hollywood</div>
+  <div class="section-divider"></div>
+  <div class="metrics-grid metrics-grid-4">
+    <div class="metric-card"><span class="metric-value">$1,950</span><span class="metric-label">Underwritten 1BD</span></div>
+    <div class="metric-card"><span class="metric-value">$2,500</span><span class="metric-label">Underwritten 2BD</span></div>
+    <div class="metric-card"><span class="metric-value">$3,200</span><span class="metric-label">Underwritten 3BD</span></div>
+    <div class="metric-card"><span class="metric-value">$215,400</span><span class="metric-label">Pro Forma Annual GSR</span></div>
+  </div>
+  <div class="loc-wide-map comp-map">
+    <picture>
+      <source media="(max-width: 768px)" srcset="images/maps-camarillo-rent-comps-tall.png">
+      <img src="images/maps-camarillo-rent-comps.png" alt="Rent comparables map" loading="lazy">
+    </picture>
+  </div>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Address</th><th>Unit Type</th><th class="num">SF</th><th class="num">Monthly Rent</th><th>Basis / Date</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.realtor.com/rentals/details/11601-Moorpark-St_North-Hollywood_CA_91602_M10237-09491" target="_blank" rel="noopener">11601 Moorpark St</a></td><td>1BD / 1BA</td><td class="num">500</td><td class="num">$2,250</td><td>Leased &middot; Jul 2025</td></tr>
+      <tr><td><a href="https://www.redfin.com/CA/North-Hollywood/10806-Sarah-St-91602/home/5303878" target="_blank" rel="noopener">10806 Sarah St</a></td><td>1BD / 1BA</td><td class="num">650</td><td class="num">$2,200</td><td>Leased &middot; May 2025</td></tr>
+      <tr><td><a href="https://www.compass.com/homedetails/11162-Camarillo-St-Unit-307-North-Hollywood-CA-91602/219MWI_pid/" target="_blank" rel="noopener">11162 Camarillo St #307</a></td><td>1BD / 1BA</td><td class="num">795</td><td class="num">$2,125</td><td>Leased &middot; Dec 2025</td></tr>
+      <tr><td><a href="https://www.compass.com/homedetails/10757-Hortense-St-Unit-303-North-Hollywood-CA-91602/1K8C50_pid/" target="_blank" rel="noopener">10757 Hortense St #303</a></td><td>2BD / 2BA</td><td class="num">929</td><td class="num">$2,500</td><td>Active &middot; Jul 2026; prior lease $2,450</td></tr>
+      <tr><td><a href="https://www.zillow.com/homedetails/10248-Riverside-Dr-APT-D-North-Hollywood-CA-91602/461797813_zpid/" target="_blank" rel="noopener">10248 Riverside Dr #D</a></td><td>2BD / 1BA</td><td class="num">850</td><td class="num">$2,600</td><td>Active &middot; Jul 2026</td></tr>
+      <tr><td><a href="https://www.zumper.com/apartment-buildings/p1117029/11255-c-mid-town-north-hollywood-los-angeles-ca" target="_blank" rel="noopener">11255 Camarillo St</a></td><td>2BD / 2BA</td><td class="num">1,150</td><td class="num">$2,695</td><td>Active &middot; Jul 2026</td></tr>
+      <tr><td><a href="https://www.renthop.com/listings/4406-cahuenga-boulevard/101/75799377" target="_blank" rel="noopener">4406 Cahuenga Blvd #101</a></td><td>3BD / 2BA</td><td class="num">1,300</td><td class="num">$3,200</td><td>Leased / expired &middot; Jul 2026</td></tr>
+      <tr><td><a href="https://www.apartmentfinder.com/California/Toluca-Lake-Apartments/Palermo-Villas-Apartments-qlgbqhz" target="_blank" rel="noopener">Palermo Villas &middot; 11100 Riverside Dr</a></td><td>3BD / 2BA</td><td class="num">1,356</td><td class="num">$3,475</td><td>Active &middot; Jul 2026</td></tr>
+    </tbody>
+  </table></div>
+  <p class="narrative">The underwritten rents are deliberately below or at the lower end of the relevant evidence. The 1BD assumption is below three recent achieved rents, the 2BD assumption is supported by a current $2,500 listing and nearby asks of $2,600 to $2,695, and the 3BD assumption matches a recent $3,200 achieved/expired listing below current larger-unit asking rent. Applied to the supported 5x1BD, 2x2BD, and 1x3BD mix, these assumptions produce $17,950 per month of pro forma rent.</p>
 </div>
 
 <!-- SALE COMPS -->
 <div class="page-break-marker"></div>
 <div class="section" id="sale-comps">
   <div class="section-title">Sale Comparables</div>
-  <div class="section-subtitle">Six Recent Vintage Apartment Sales - NoHo / Toluca Lake</div>
+  <div class="section-subtitle">Eight Recent Vintage Apartment Sales &middot; NoHo / Toluca Lake / Studio City</div>
   <div class="section-divider"></div>
-  <div class="loc-wide-map comp-map" style="height:340px;"><img src="images/sale_map.png" alt="Sale Comps Map"></div>
+  <div class="loc-wide-map comp-map">
+    <picture>
+      <source media="(max-width: 768px)" srcset="images/maps-camarillo-sale-comps-tall.png">
+      <img src="images/maps-camarillo-sale-comps.png" alt="Sale comparables map" loading="lazy">
+    </picture>
+  </div>
   <div class="table-scroll"><table>
     <thead><tr><th>Address</th><th>Submarket</th><th class="num">Yr</th><th class="num">Units</th><th class="num">Bldg SF</th><th class="num">Sale Price</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">Dist</th><th class="num">Sold</th></tr></thead>
     <tbody><tr><td><a href='https://www.google.com/maps/place/4870+Bakman+Ave,+North+Hollywood,+CA+91601/' target='_blank' rel='noopener'>4870 Bakman Ave</a> &middot; <a href='https://www.apartments.com/4870-bakman-ave-north-hollywood-ca/' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>photos &#8599;</a></td><td>North Hollywood</td><td class='num'>1962</td><td class='num'>8</td><td class='num'>6,832</td><td class='num'>$1,625,000</td><td class='num'>$203,125</td><td class='num'>$238</td><td class='num'>0.22 mi</td><td class='num'>Dec 2025</td></tr>
@@ -540,36 +584,36 @@ td.num, th.num { text-align: right; }
 <tr><td><a href='https://www.google.com/maps/place/10935+Peach+Grove+St,+North+Hollywood,+CA+91601/' target='_blank' rel='noopener'>10935 Peach Grove St</a> &middot; <a href='https://www.apartments.com/10935-peach-grove-st-north-hollywood-ca/' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>photos &#8599;</a></td><td>North Hollywood</td><td class='num'>1967</td><td class='num'>10</td><td class='num'>7,414</td><td class='num'>$2,000,000</td><td class='num'>$200,000</td><td class='num'>$270</td><td class='num'>0.34 mi</td><td class='num'>Dec 2025</td></tr>
 <tr><td><a href='https://www.google.com/maps/place/10602+Landale+St,+Toluca+Lake,+CA+91602/' target='_blank' rel='noopener'>10602 Landale St</a> &middot; <a href='https://www.apartments.com/10602-landale-st-toluca-lake-ca/' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>photos &#8599;</a></td><td>Toluca Lake</td><td class='num'>1956</td><td class='num'>7</td><td class='num'>5,808</td><td class='num'>$1,936,000</td><td class='num'>$276,571</td><td class='num'>$333</td><td class='num'>0.85 mi</td><td class='num'>Dec 2025</td></tr>
 <tr><td><a href='https://www.google.com/maps/place/5326+Cahuenga+Blvd,+North+Hollywood,+CA+91601/' target='_blank' rel='noopener'>5326 Cahuenga Blvd</a> &middot; <a href='https://www.apartments.com/5326-cahuenga-blvd-north-hollywood-ca/' target='_blank' rel='noopener' style='font-size:11px;color:#3F6FA8;text-decoration:none;'>photos &#8599;</a></td><td>North Hollywood</td><td class='num'>1964</td><td class='num'>8</td><td class='num'>4,422</td><td class='num'>$1,600,000</td><td class='num'>$200,000</td><td class='num'>$362</td><td class='num'>1.04 mi</td><td class='num'>Apr 2026</td></tr>
-<tr class='summary'><td colspan='5'><strong>Median (6 sold comps)</strong></td><td class='num'><strong>$1,868,000</strong></td><td class='num'><strong>$234,063</strong></td><td class='num'><strong>$325</strong></td><td class='num'>-</td><td class='num'>-</td></tr>
+<tr><td><a href="https://www.redfin.com/CA/North-Hollywood/11100-Camarillo-St-91602/home/185899986" target="_blank" rel="noopener">11100 Camarillo St</a></td><td>North Hollywood</td><td class="num">1962</td><td class="num">8</td><td class="num">7,236</td><td class="num">$1,700,000</td><td class="num">$212,500</td><td class="num">$235</td><td class="num">0.12 mi</td><td class="num">Jul 2026</td></tr>
+<tr><td><a href="https://www.redfin.com/CA/Studio-City/4300-Tujunga-Ave-91604/home/5231128" target="_blank" rel="noopener">4300 Tujunga Ave</a></td><td>Studio City</td><td class="num">1963</td><td class="num">10</td><td class="num">8,892</td><td class="num">$2,975,000</td><td class="num">$297,500</td><td class="num">$335</td><td class="num">0.69 mi</td><td class="num">Jul 2026</td></tr>
+<tr class='summary'><td colspan='5'><strong>Median (8 sold comps)</strong></td><td class='num'><strong>$1,868,000</strong></td><td class='num'><strong>$238,750</strong></td><td class='num'><strong>$325</strong></td><td class='num'>-</td><td class='num'>-</td></tr>
 </tbody>
   </table></div>
-  <div class="comp-narratives"><p class="narrative"><strong>1. 4870 Bakman Ave</strong> - The benchmark comp: an eight-unit, 1962-built, 6,832 SF building two blocks from the subject that traded in December 2025 at $1,625,000 ($203,125/unit, $238/SF). It is the subject's near-twin on paper - without the subject's completed soft-story retrofit, 2024 electrical/plumbing, or remodeled-unit rent proof. The spread between $238/SF and the subject's $262/SF ask is the documented capital and income delta.</p>
-<p class="narrative"><strong>2. 11205 Peach Grove St</strong> - A block away: six units, 1987 build, sold March 2026 at $300,000/unit and $324/SF. Newer vintage, but it prices the same renter pool and demonstrates the submarket's willingness to pay $300K+/unit within 700 feet of the subject.</p>
-<p class="narrative"><strong>3. 11508 Moorpark St</strong> - The only other 8-unit trade in the radius: 1994 build on the Toluca Lake border, June 2026, $2,120,000 ($265,000/unit, $326/SF). Sets the ceiling an eight-unit commands in 91602 with newer vintage and no rent upside story.</p>
-<p class="narrative"><strong>4. 10935 Peach Grove St</strong> - Ten units, 1967, sold December 2025 at $2,000,000 ($200,000/unit, $270/SF). The closest match to the subject's building area at 7,414 SF; its $270/SF for un-remodeled vintage stock directly supports the subject's basis.</p>
-<p class="narrative"><strong>5. 10602 Landale St</strong> - Seven units in Toluca Lake proper, 1956 build, December 2025, $1,936,000 ($276,571/unit, $333/SF). Shows the premium the Toluca Lake side of the ZIP commands - a halo the subject's 91602 address participates in.</p>
-<p class="narrative"><strong>6. 5326 Cahuenga Blvd</strong> - Same-vintage eight-unit (1964) at the smaller end of the SF range, April 2026, $1,600,000 ($200,000/unit, $362/SF). Anchors the per-unit floor for 1960s eight-unit product in NoHo.</p>
-</div>
+  <p class="narrative">The two July 2026 closings strengthen the comparison. The nearby 11100 Camarillo sale is an eight-unit, 1962 property with the same 5x1BD, 2x2BD, and 1x3BD mix; it traded for $1,700,000, or $212,500 per unit and $235 per square foot. The 4300 Tujunga sale provides a larger Studio City benchmark at $297,500 per unit and $335 per square foot. Across all eight sales, the median is $238,750 per unit and $325 per square foot.</p>
 </div>
 
 <!-- ON-MARKET -->
 <div class="page-break-marker"></div>
 <div class="section section-alt" id="on-market">
   <div class="section-title">On-Market Comparables</div>
-  <div class="section-subtitle">Active Demand &amp; the Pricing Ceiling</div>
+  <div class="section-subtitle">Current Competitive Inventory</div>
   <div class="section-divider"></div>
-  <div class="loc-wide-map comp-map" style="height:340px;"><img src="images/onmkt_map.png" alt="On-Market Comps Map"></div>
+  <div class="loc-wide-map comp-map">
+    <picture>
+      <source media="(max-width: 768px)" srcset="images/maps-camarillo-active-comps-tall.png">
+      <img src="images/maps-camarillo-active-comps.png" alt="On-market comparables map" loading="lazy">
+    </picture>
+  </div>
   <div class="table-scroll"><table>
     <thead><tr><th>Address</th><th>Submarket</th><th class="num">Yr</th><th class="num">Units</th><th class="num">List Price</th><th class="num">$/Unit</th><th class="num">$/SF</th><th>Status</th></tr></thead>
     <tbody><tr><td><a href='https://www.zillow.com/homes/11017-Hartsook-St,-North-Hollywood,-CA-91601_rb/' target='_blank' rel='noopener'>11017 Hartsook St</a></td><td>North Hollywood</td><td class='num'>1937</td><td class='num'>6</td><td class='num'>$1,100,000</td><td class='num'>$183,333</td><td class='num'>$372</td><td>Active &middot; MLS</td></tr>
-<tr><td><a href='https://www.zillow.com/homes/4300-Tujunga-Ave,-Studio-City,-CA-91604_rb/' target='_blank' rel='noopener'>4300 Tujunga Ave</a></td><td>Studio City</td><td class='num'>1963</td><td class='num'>10</td><td class='num'>$2,975,000</td><td class='num'>$297,500</td><td class='num'>$335</td><td>Active</td></tr>
-<tr><td><a href='https://www.zillow.com/homes/4173-Fair-Ave,-North-Hollywood,-CA-91602_rb/' target='_blank' rel='noopener'>4173 Fair Ave</a></td><td>North Hollywood</td><td class='num'>1975</td><td class='num'>5</td><td class='num'>$1,825,000</td><td class='num'>$365,000</td><td class='num'>$340</td><td>Active &middot; Marcus &amp; Millichap</td></tr>
-<tr><td><a href='https://www.zillow.com/homes/11502-Killion-St,-North-Hollywood,-CA-91601_rb/' target='_blank' rel='noopener'>11502 Killion St</a></td><td>Valley Village</td><td class='num'>1978</td><td class='num'>6</td><td class='num'>$2,400,000</td><td class='num'>$400,000</td><td class='num'>$412</td><td>Active</td></tr>
-<tr><td><a href='https://www.zillow.com/homes/11155-Aqua-Vista-St,-North-Hollywood,-CA-91602_rb/' target='_blank' rel='noopener'>11155 Aqua Vista St</a></td><td>North Hollywood</td><td class='num'>1988</td><td class='num'>14</td><td class='num'>$4,999,999</td><td class='num'>$357,143</td><td class='num'>$413</td><td>Active</td></tr>
-<tr class='summary'><td colspan='4'><strong>Average (5 active comps)</strong></td><td class='num'><strong>$2,660,000</strong></td><td class='num'><strong>$320,595</strong></td><td class='num'><strong>$374</strong></td><td>-</td></tr>
+<tr><td><a href='https://www.redfin.com/CA/North-Hollywood/4173-Fair-Ave-91602/home/5232902' target='_blank' rel='noopener'>4173 Fair Ave</a></td><td>North Hollywood</td><td class='num'>1975</td><td class='num'>5</td><td class='num'>$1,825,000</td><td class='num'>$365,000</td><td class='num'>$340</td><td>Active &middot; Marcus &amp; Millichap</td></tr>
+<tr><td><a href='https://www.trimarkrealty.com/listings/26845207-4445-tujunga-avenue-north-hollywood-ca-91602' target='_blank' rel='noopener'>4441-4445 Tujunga Ave</a></td><td>Studio City</td><td class='num'>1946</td><td class='num'>6</td><td class='num'>$2,445,000</td><td class='num'>$407,500</td><td class='num'>$463</td><td>Active &middot; MLS</td></tr>
+<tr><td><a href='https://www.redfin.com/CA/North-Hollywood/6651-Beck-Ave-91606/home/5043280' target='_blank' rel='noopener'>6651 Beck Ave</a></td><td>North Hollywood</td><td class='num'>1961</td><td class='num'>6</td><td class='num'>$1,510,000</td><td class='num'>$251,667</td><td class='num'>$251</td><td>Active &middot; MLS</td></tr>
+<tr class='summary'><td colspan='4'><strong>Average (4 active comps)</strong></td><td class='num'><strong>$1,720,000</strong></td><td class='num'><strong>$301,875</strong></td><td class='num'><strong>$357</strong></td><td>-</td></tr>
 </tbody>
   </table></div>
-  <p class="narrative">The active inventory frames the subject's ask favorably. Every vintage building currently on the market within the radius asks between $335 and $413 per square foot - the subject at $262/SF undercuts the entire active set while carrying permit-verified capital improvements none of them advertise. On a per-unit basis, the actives average $320,595 against the subject's $239,375. The lone sub-$200K/unit active (11017 Hartsook) is a 1937-built, 2,958 SF walk-up at nearly $100 more per square foot. Priced below every live alternative on the metric buyers actually screen by, the subject is positioned to clear, not to sit.</p>
+  <p class="narrative">Current competitive inventory spans $251 to $463 per square foot and averages $301,875 per unit. The subject's recommended basis is near the low end of the active price-per-square-foot range and materially below the active average on a per-unit basis, while offering a comparable small-building profile in the same broader renter market.</p>
 </div>
 
 <!-- FINANCIAL ANALYSIS -->
@@ -579,21 +623,32 @@ td.num, th.num { text-align: right; }
   <div class="section-subtitle">Investment Underwriting</div>
   <div class="section-divider"></div>
 
-  <h3 class="sub-heading">Unit Mix &amp; Rent Roll</h3>
+  <h3 class="sub-heading">Owner Rent Roll</h3>
   <div class="table-scroll"><table>
-    <thead><tr><th>Unit</th><th>Type</th><th class="num">Current Rent/Mo</th><th class="num">Market Rent/Mo</th><th>Status</th><th>Notes</th></tr></thead>
-    <tbody><tr><td>1</td><td>2BD / 2BA</td><td class='num'>$2,179</td><td class='num'>$2,550</td><td>Occupied</td><td></td></tr>
-<tr><td>2</td><td>2BD / 2BA</td><td class='num'>$1,850</td><td class='num'>$2,550</td><td>Occupied</td><td></td></tr>
-<tr><td>3</td><td>1BD / 1BA</td><td class='num'>$1,950</td><td class='num'>$1,950</td><td>Vacant</td><td>Remodeled; advertised at $1,950</td></tr>
-<tr><td>4</td><td>1BD / 1BA</td><td class='num'>$1,297</td><td class='num'>$1,950</td><td>Occupied</td><td></td></tr>
-<tr><td>5</td><td>1BD / 1BA</td><td class='num'>$1,264</td><td class='num'>$1,950</td><td>Occupied</td><td></td></tr>
-<tr><td>6</td><td>1BD / 1BA</td><td class='num'>$1,357</td><td class='num'>$1,950</td><td>Occupied</td><td></td></tr>
-<tr><td>7</td><td>2BD / 2BA</td><td class='num'>$2,496</td><td class='num'>$2,550</td><td>Occupied</td><td>Renovated; recent turn</td></tr>
-<tr><td>8</td><td>2BD / 2BA</td><td class='num'>$1,750</td><td class='num'>$2,550</td><td>Occupied</td><td></td></tr>
-<tr class='summary'><td><strong>Total</strong></td><td><strong>8 units</strong></td><td class='num'><strong>$14,143/mo</strong></td><td class='num'><strong>$18,000/mo</strong></td><td><strong>87.5% occ.</strong></td><td><strong>$169,716 / $216,000 GSR</strong></td></tr>
+    <thead><tr><th>Unit</th><th class="num">Current Rent/Mo</th><th>Status</th><th>Owner Notes</th></tr></thead>
+    <tbody><tr><td>1</td><td class='num'>$2,179</td><td>Occupied</td><td></td></tr>
+<tr><td>2</td><td class='num'>$1,850</td><td>Occupied</td><td></td></tr>
+<tr><td>3</td><td class='num'>$1,950</td><td>Vacant</td><td>Remodeled; advertised at $1,950</td></tr>
+<tr><td>4</td><td class='num'>$1,297</td><td>Occupied</td><td></td></tr>
+<tr><td>5</td><td class='num'>$1,264</td><td>Occupied</td><td></td></tr>
+<tr><td>6</td><td class='num'>$1,357</td><td>Occupied</td><td></td></tr>
+<tr><td>7</td><td class='num'>$2,496</td><td>Occupied</td><td>Renovated; recent turn</td></tr>
+<tr><td>8</td><td class='num'>$1,750</td><td>Occupied</td><td></td></tr>
+<tr class='summary'><td><strong>Total</strong></td><td class='num'><strong>$14,143/mo</strong></td><td><strong>7 of 8 occupied</strong></td><td><strong>$169,716 annual GSR</strong></td></tr>
 </tbody>
   </table></div>
-  <p style="font-size:11px;color:#6B7280;margin-top:-12px;margin-bottom:24px;">Unit mix of 4x 2BD/2BA and 4x 1BD/1BA per ownership. Unit-type assignment shown is inferred from rent levels and the advertised vacancy; per-unit square footages and final assignments to be confirmed with rent roll and leases in due diligence.</p>
+  <p style="font-size:11px;color:#6B7280;margin-top:-12px;margin-bottom:24px;">Current rents and occupancy are from the owner's July 2026 rent roll. The supported physical mix is 5x 1BD/1BA, 2x 2BD/2BA, and 1x 3BD/2BA; the source materials do not assign those types to individual unit numbers, so no assignment is implied above.</p>
+
+  <h3 class="sub-heading">Market Rent Assumptions</h3>
+  <table>
+    <thead><tr><th>Unit Type</th><th class="num">Units</th><th class="num">Market Rent/Mo</th><th class="num">Monthly Total</th></tr></thead>
+    <tbody>
+      <tr><td>1BD / 1BA</td><td class="num">5</td><td class="num">$1,950</td><td class="num">$9,750</td></tr>
+      <tr><td>2BD / 2BA</td><td class="num">2</td><td class="num">$2,500</td><td class="num">$5,000</td></tr>
+      <tr><td>3BD / 2BA</td><td class="num">1</td><td class="num">$3,200</td><td class="num">$3,200</td></tr>
+      <tr class="summary"><td><strong>Total</strong></td><td class="num"><strong>8</strong></td><td></td><td class="num"><strong>$17,950</strong></td></tr>
+    </tbody>
+  </table>
 
   <div class="os-two-col">
     <div class="os-left">
@@ -601,36 +656,36 @@ td.num, th.num { text-align: right; }
       <table>
         <thead><tr><th>Income</th><th class="num">Current</th><th class="num">Pro Forma</th></tr></thead>
         <tbody>
-      <tr><td>Gross Scheduled Rent <span class="note-ref">[1]</span></td><td class="num">$169,716</td><td class="num">$216,000</td></tr>
+      <tr><td>Gross Scheduled Rent <span class="note-ref">[1]</span></td><td class="num">$169,716</td><td class="num">$215,400</td></tr>
       <tr><td>Laundry Income <span class="note-ref">[2]</span></td><td class="num">$341</td><td class="num">$341</td></tr>
-      <tr><td>Less: Vacancy (3%) <span class="note-ref">[3]</span></td><td class="num">($5,091)</td><td class="num">($6,480)</td></tr>
-      <tr class="summary"><td><strong>Effective Gross Income</strong></td><td class="num"><strong>$164,966</strong></td><td class="num"><strong>$209,861</strong></td></tr></tbody>
+      <tr><td>Less: Vacancy (3%) <span class="note-ref">[3]</span></td><td class="num">($5,091)</td><td class="num">($6,462)</td></tr>
+      <tr class="summary"><td><strong>Effective Gross Income</strong></td><td class="num"><strong>$164,966</strong></td><td class="num"><strong>$209,279</strong></td></tr></tbody>
       </table>
       <table>
         <thead><tr><th>Expenses</th><th class="num">Current</th><th class="num">Pro Forma</th></tr></thead>
-        <tbody><tr><td>Real Estate Taxes <span class="note-ref">[4]</span></td><td class="num">$23,938</td><td class="num">$23,938</td></tr>
+        <tbody><tr><td>Real Estate Taxes <span class="note-ref">[4]</span></td><td class="num">$22,406</td><td class="num">$22,406</td></tr>
 <tr><td>Insurance <span class="note-ref">[5]</span></td><td class="num">$8,900</td><td class="num">$8,900</td></tr>
 <tr><td>Utilities <span class="note-ref">[5]</span></td><td class="num">$8,340</td><td class="num">$8,340</td></tr>
 <tr><td>Repairs &amp; Maintenance <span class="note-ref">[5]</span></td><td class="num">$8,500</td><td class="num">$8,500</td></tr>
 <tr><td>Landscaping <span class="note-ref">[5]</span></td><td class="num">$2,400</td><td class="num">$2,400</td></tr>
 <tr><td>Rubbish <span class="note-ref">[5]</span></td><td class="num">$3,800</td><td class="num">$3,800</td></tr>
-<tr><td>Management (4% EGI) <span class="note-ref">[6]</span></td><td class="num">$6,599</td><td class="num">$8,394</td></tr>
+<tr><td>Management (4% EGI) <span class="note-ref">[6]</span></td><td class="num">$6,599</td><td class="num">$8,371</td></tr>
 <tr><td>Reserves <span class="note-ref">[7]</span></td><td class="num">$2,000</td><td class="num">$2,000</td></tr>
-<tr class="summary"><td><strong>Total Operating Expenses</strong></td><td class="num"><strong>$64,477</strong></td><td class="num"><strong>$66,272</strong></td></tr>
-<tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$100,489</strong></td><td class="num"><strong>$143,589</strong></td></tr>
+<tr class="summary"><td><strong>Total Operating Expenses</strong></td><td class="num"><strong>$62,945</strong></td><td class="num"><strong>$64,717</strong></td></tr>
+<tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$102,021</strong></td><td class="num"><strong>$144,562</strong></td></tr>
 </tbody>
       </table>
     </div>
     <div class="os-right">
       <h3 class="sub-heading">Notes to Operating Statement</h3>
-      <p><strong>[1] Gross Scheduled Rent:</strong> Current = owner rent roll (7/2026), $14,143/mo including the vacant remodeled 1BD at its $1,950 advertised rent. Pro forma = $18,000/mo at in-building proven turn rents: $2,550/2BD (unit 7 achieved $2,496) and $1,950/1BD (the advertised remodeled vacancy).</p>
+      <p><strong>[1] Gross Scheduled Rent:</strong> Current = owner rent roll dated July 2026, $14,143/mo including the vacant remodeled unit at its $1,950 advertised rent. Pro forma = $17,950/mo using the supported physical mix and the market rents shown above.</p>
 <p><strong>[2] Laundry Income:</strong> Owner-reported annual laundry room income.</p>
 <p><strong>[3] Vacancy:</strong> 3.0% of GSR, standard for stabilized small multifamily in this submarket (owner's own P&amp;L uses the same factor).</p>
-<p><strong>[4] Real Estate Taxes:</strong> LA County reassesses to the purchase price at close. Shown at 1.25% of the $1,915,000 list price. Owner's current Prop 13 bill is $3,700 - buyers should underwrite the reassessed figure, as shown.</p>
+<p><strong>[4] Real Estate Taxes:</strong> Buyer underwriting is shown at 1.17% of the recommended value. The owner materials contain both a $3,700 Prop 13 line item and a separate $23,500 current-tax reference; neither is used for the buyer's reassessed tax projection.</p>
 <p><strong>[5] Insurance / Utilities / R&amp;M / Landscaping / Rubbish:</strong> Owner-reported annualized operating figures (7/2026 statement): $8,900 / $8,340 / $8,500 / $2,400 / $3,800.</p>
 <p><strong>[6] Management:</strong> Underwritten at 4.0% of EGI per LAAA standard for third-party-managed vintage product (owner currently reports $6,500 off-site management).</p>
 <p><strong>[7] Reserves:</strong> $250/unit, standard tier for 1960s vintage with major systems recently addressed.</p>
-      <p style="margin-top:8px;"><em>Owner-reported figures are unaudited; buyer to verify all income and expenses in due diligence.</em></p>
+      <p style="margin-top:8px;"><em>The owner's expense line items total $44,140, while the source statement labels the total as $44,210. The itemized figures control this analysis. Buyer to verify all income, expenses, leases, and unit assignments in due diligence.</em></p>
     </div>
   </div>
 
@@ -640,7 +695,6 @@ td.num, th.num { text-align: right; }
       <div class="summary-left">
         <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Operating Data</th></tr></thead><tbody>
           <tr><td>Price</td><td class="num">$1,915,000</td></tr>
-          <tr><td>Down Payment</td><td class="num">$766,000</td></tr>
           <tr><td>Number of Units</td><td class="num">8</td></tr>
           <tr><td>Price / Unit</td><td class="num">$239,375</td></tr>
           <tr><td>Price / SF</td><td class="num">$262</td></tr>
@@ -648,17 +702,9 @@ td.num, th.num { text-align: right; }
           <tr><td>Year Built</td><td class="num">1962</td></tr>
         </tbody></table>
         <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Returns (Reassessed)</th></tr></thead><tbody>
-          <tr><td>Cap Rate (Current / Pro Forma)</td><td class="num">5.25% / 7.50%</td></tr>
-          <tr><td>GRM (Current / Pro Forma)</td><td class="num">11.28x / 8.87x</td></tr>
-          <tr><td>Cash-on-Cash</td><td class="num">2.33%</td></tr>
-          <tr><td>DSCR</td><td class="num">1.22x</td></tr>
-        </tbody></table>
-        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Financing</th></tr></thead><tbody>
-          <tr><td>Loan Amount</td><td class="num">$1,149,000</td></tr>
-          <tr><td>Rate / Amort</td><td class="num">6.00% / 30yr</td></tr>
-          <tr><td>Loan Constant</td><td class="num">7.19%</td></tr>
-          <tr><td>LTV (actual)</td><td class="num">60.0%</td></tr>
-          <tr><td>Constraint</td><td class="num">LTV (60%)</td></tr>
+          <tr><td>Cap Rate (Current / Pro Forma)</td><td class="num">5.33% / 7.55%</td></tr>
+          <tr><td>GRM (Current / Pro Forma)</td><td class="num">11.28x / 8.89x</td></tr>
+          <tr><td>Rental Upside</td><td class="num">26.9%</td></tr>
         </tbody></table>
       </div>
       <div class="summary-right">
@@ -667,21 +713,21 @@ td.num, th.num { text-align: right; }
           <tr><td>Laundry Income</td><td class="num">$341</td></tr>
           <tr><td>Less Vacancy (3%)</td><td class="num">($5,091)</td></tr>
           <tr><td>Effective Gross Income</td><td class="num">$164,966</td></tr>
-          <tr><td>Operating Expenses</td><td class="num">($64,477)</td></tr>
-          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$100,489</strong></td></tr>
+          <tr><td>Operating Expenses</td><td class="num">($62,945)</td></tr>
+          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$102,021</strong></td></tr>
         </tbody></table>
-        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Cash Flow (Current)</th></tr></thead><tbody>
-          <tr><td>Net Operating Income</td><td class="num">$100,489</td></tr>
-          <tr><td>Debt Service</td><td class="num">($82,671)</td></tr>
-          <tr><td>Net Cash Flow</td><td class="num">$17,818</td></tr>
-          <tr><td>Cash-on-Cash</td><td class="num">2.33%</td></tr>
-          <tr><td>+ Principal Reduction</td><td class="num">$14,110</td></tr>
-          <tr class="summary"><td><strong>Total Return</strong></td><td class="num"><strong>4.17%</strong></td></tr>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Income (Pro Forma)</th></tr></thead><tbody>
+          <tr><td>Gross Scheduled Rent</td><td class="num">$215,400</td></tr>
+          <tr><td>Laundry Income</td><td class="num">$341</td></tr>
+          <tr><td>Less Vacancy (3%)</td><td class="num">($6,462)</td></tr>
+          <tr><td>Effective Gross Income</td><td class="num">$209,279</td></tr>
+          <tr><td>Operating Expenses</td><td class="num">($64,717)</td></tr>
+          <tr class="summary"><td><strong>Net Operating Income</strong></td><td class="num"><strong>$144,562</strong></td></tr>
         </tbody></table>
-        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Expense Ratio (Current)</th></tr></thead><tbody>
-          <tr><td>OpEx / EGI</td><td class="num">39.1%</td></tr>
-          <tr><td>OpEx / Unit</td><td class="num">$8,060</td></tr>
-          <tr><td>OpEx / SF</td><td class="num">$8.83</td></tr>
+        <table class="summary-table"><thead><tr><th colspan="2" class="summary-header">Expense Ratios</th></tr></thead><tbody>
+          <tr><td>Current OpEx / EGI</td><td class="num">38.2%</td></tr>
+          <tr><td>Pro Forma OpEx / EGI</td><td class="num">30.9%</td></tr>
+          <tr><td>Current OpEx / Unit</td><td class="num">$7,868</td></tr>
         </tbody></table>
       </div>
     </div>
@@ -693,35 +739,15 @@ td.num, th.num { text-align: right; }
       <div style="font-size:56px;font-weight:700;color:#1B3A5C;line-height:1;font-family:'DM Serif Display',serif;">$1,915,000</div>
     </div>
     <div class="metrics-grid metrics-grid-4">
-      <div class="metric-card"><span class="metric-value">5.25%</span><span class="metric-label">Current Cap</span></div>
-      <div class="metric-card"><span class="metric-value">7.50%</span><span class="metric-label">Pro Forma Cap</span></div>
+      <div class="metric-card"><span class="metric-value">5.33%</span><span class="metric-label">Current Cap</span></div>
+      <div class="metric-card"><span class="metric-value">7.55%</span><span class="metric-label">Pro Forma Cap</span></div>
       <div class="metric-card"><span class="metric-value">$239,375</span><span class="metric-label">Price / Unit</span></div>
       <div class="metric-card"><span class="metric-value">$262</span><span class="metric-label">Price / SF</span></div>
     </div>
-    <h3 class="sub-heading">Pricing Matrix</h3>
-    <div class="table-scroll"><table>
-      <thead><tr><th class="num">Purchase Price</th><th class="num">Cap Rate</th><th class="num">Pro Forma Cap</th><th class="num">Cash-on-Cash</th><th class="num">$/Unit</th><th class="num">$/SF</th><th class="num">GRM</th><th class="num">DSCR</th></tr></thead>
-      <tbody><tr><td class="num">$2,165,000</td><td class="num">4.50%</td><td class="num">6.49%</td><td class="num">1.56%</td><td class="num">$270,625</td><td class="num">$297</td><td class="num">12.76x</td><td class="num">1.20x</td></tr>
-<tr><td class="num">$2,115,000</td><td class="num">4.63%</td><td class="num">6.67%</td><td class="num">1.67%</td><td class="num">$264,375</td><td class="num">$290</td><td class="num">12.46x</td><td class="num">1.20x</td></tr>
-<tr><td class="num">$2,065,000</td><td class="num">4.78%</td><td class="num">6.86%</td><td class="num">1.78%</td><td class="num">$258,125</td><td class="num">$283</td><td class="num">12.17x</td><td class="num">1.20x</td></tr>
-<tr><td class="num">$2,015,000</td><td class="num">4.93%</td><td class="num">7.06%</td><td class="num">1.91%</td><td class="num">$251,875</td><td class="num">$276</td><td class="num">11.87x</td><td class="num">1.20x</td></tr>
-<tr><td class="num">$1,965,000</td><td class="num">5.08%</td><td class="num">7.28%</td><td class="num">2.06%</td><td class="num">$245,625</td><td class="num">$269</td><td class="num">11.58x</td><td class="num">1.20x</td></tr>
-<tr class="highlight"><td class="num">$1,915,000</td><td class="num">5.25%</td><td class="num">7.50%</td><td class="num">2.33%</td><td class="num">$239,375</td><td class="num">$262</td><td class="num">11.28x</td><td class="num">1.22x</td></tr>
-<tr><td class="num">$1,865,000</td><td class="num">5.42%</td><td class="num">7.73%</td><td class="num">2.76%</td><td class="num">$233,125</td><td class="num">$256</td><td class="num">10.99x</td><td class="num">1.26x</td></tr>
-<tr><td class="num">$1,815,000</td><td class="num">5.61%</td><td class="num">7.98%</td><td class="num">3.22%</td><td class="num">$226,875</td><td class="num">$249</td><td class="num">10.69x</td><td class="num">1.30x</td></tr>
-<tr><td class="num">$1,765,000</td><td class="num">5.80%</td><td class="num">8.24%</td><td class="num">3.71%</td><td class="num">$220,625</td><td class="num">$242</td><td class="num">10.40x</td><td class="num">1.34x</td></tr>
-<tr><td class="num">$1,715,000</td><td class="num">6.01%</td><td class="num">8.52%</td><td class="num">4.22%</td><td class="num">$214,375</td><td class="num">$235</td><td class="num">10.11x</td><td class="num">1.39x</td></tr>
-<tr><td class="num">$1,665,000</td><td class="num">6.22%</td><td class="num">8.81%</td><td class="num">4.77%</td><td class="num">$208,125</td><td class="num">$228</td><td class="num">9.81x</td><td class="num">1.44x</td></tr>
-</tbody>
-    </table></div>
-    <div class="summary-trade-range">
-      <div class="summary-trade-label">A Trade Price in the Current Investment Environment Of</div>
-      <div class="summary-trade-prices">$1,850,000 &mdash; $1,975,000</div>
-    </div>
     <h3 class="sub-heading">Pricing Rationale</h3>
-    <p>The list price of $1,915,000 reconciles three independent pricing lenses. On price-per-SF ($262) it sits 19% below the sold-comp median of $325 and below every active listing in the radius - the metric that makes the subject the cheapest live alternative in its submarket. On a per-unit basis ($239,375) it carries a measured premium to the $234,063 sold median, fully accounted for by the permit-verified capital program and the in-building rent proof no comp can match. On yield, the 5.25% reassessed current cap converts to 7.50% pro forma at rents the building itself has already achieved.</p>
-    <p>The benchmark is 4870 Bakman Ave - the unrenovated 1962 eight-unit twin two blocks away that traded at $1,625,000 in December 2025. The subject's $290,000 premium buys a completed soft-story retrofit, 2024 electrical and plumbing, remodeled units, and a documented 27% rent upside - a defensible spread positioned to clear within a standard 60-90 day marketing window.</p>
-    <div class="condition-note"><strong>Assumptions &amp; Conditions:</strong> This opinion of value is based on owner-reported income and expenses (July 2026), permit records, and recent comparable sales. Real estate taxes are shown fully reassessed at 1.25% of price. Financing shown is illustrative (6.00%, 30-year amortization, lesser of 60% LTV or 1.20x DCR). Unit mix assignment and square footages to be confirmed; final terms, prorations, and net proceeds depend on the executed contract and close date. Buyer to verify all figures in due diligence.</div>
+    <p>The recommended value of $1,915,000 equates to $239,375 per unit, essentially in line with the eight-sale median of $238,750 per unit, while its $262 per-square-foot basis is approximately 19% below the $325 sold median. The resulting 5.33% current cap rate and 7.55% pro forma cap rate reflect buyer reassessment of real estate taxes and the conservative rent assumptions supported above.</p>
+    <p>The closest physical benchmark is the July 2026 sale at 11100 Camarillo St, an eight-unit, 1962 property with the same 5x1BD, 2x2BD, and 1x3BD mix. Its $1,700,000 sale establishes a current same-street basis; the subject's completed soft-story retrofit, recent electrical and plumbing work, owner-reported rent roll, and supported rental upside provide the basis for the recommended premium.</p>
+    <div class="condition-note"><strong>Assumptions &amp; Conditions:</strong> This opinion of value is based on owner-reported income and expenses dated July 2026, the 2016 property memorandum, City of Los Angeles permit records, and market evidence verified through July 31, 2026. Real estate taxes are underwritten at 1.17% of value. The source materials support the aggregate 5x1BD, 2x2BD, and 1x3BD mix but do not assign types to individual unit numbers. Final terms, prorations, and net proceeds depend on the executed contract and close date. Buyer to verify all figures in due diligence.</div>
   </div>
 </div>
 
@@ -749,10 +775,20 @@ document.querySelectorAll('.toc-nav a').forEach(function(link) {
 });
 var tocLinks = document.querySelectorAll('.toc-nav a'); var tocSections = [];
 tocLinks.forEach(function(link) { var s = document.getElementById(link.getAttribute('href').substring(1)); if (s) tocSections.push({ link: link, section: s }); });
+var lastActiveTocLink = null;
 function updateActiveTocLink() {
   var nh = document.getElementById('toc-nav').offsetHeight + 20; var sp = window.pageYOffset + nh; var cur = null;
   tocSections.forEach(function(it) { if (it.section.offsetTop <= sp) cur = it.link; });
-  tocLinks.forEach(function(l) { l.classList.remove('toc-active'); }); if (cur) cur.classList.add('toc-active');
+  tocLinks.forEach(function(l) { l.classList.remove('toc-active'); });
+  if (cur) {
+    cur.classList.add('toc-active');
+    if (cur !== lastActiveTocLink) {
+      var nav = document.getElementById('toc-nav');
+      var centeredLeft = cur.offsetLeft - ((nav.clientWidth - cur.offsetWidth) / 2);
+      nav.scrollTo({ left: Math.max(0, centeredLeft), behavior: 'smooth' });
+      lastActiveTocLink = cur;
+    }
+  }
 }
 window.addEventListener('scroll', updateActiveTocLink); updateActiveTocLink();
 
