@@ -17,7 +17,7 @@
     {
       "property": "camarillo",
       "category": "sold",
-      "order": 1,
+      "order": 2,
       "address": "4870 Bakman Ave, North Hollywood, CA 91601",
       "lat": 34.1596664,
       "lng": -118.3772239,
@@ -28,29 +28,7 @@
     {
       "property": "camarillo",
       "category": "sold",
-      "order": 2,
-      "address": "11205 Peach Grove St, North Hollywood, CA 91601",
-      "lat": 34.1593619,
-      "lng": -118.374738,
-      "place_id": "ChIJYSJG3fWVwoARbs-DPwzIj60",
-      "precision": "ROOFTOP",
-      "needs_review": false
-    },
-    {
-      "property": "camarillo",
-      "category": "sold",
       "order": 3,
-      "address": "11508 Moorpark St, North Hollywood, CA 91602",
-      "lat": 34.1500635,
-      "lng": -118.3826519,
-      "place_id": "ChIJx2eWvQS-woARJUBUQcoIsjs",
-      "precision": "ROOFTOP",
-      "needs_review": false
-    },
-    {
-      "property": "camarillo",
-      "category": "sold",
-      "order": 4,
       "address": "10935 Peach Grove St, North Hollywood, CA 91601",
       "lat": 34.1593013,
       "lng": -118.3692513,
@@ -83,7 +61,7 @@
     {
       "property": "camarillo",
       "category": "sold",
-      "order": 7,
+      "order": 1,
       "address": "11100 Camarillo St, North Hollywood, CA 91602",
       "lat": 34.1573333,
       "lng": -118.3724711,
@@ -94,7 +72,7 @@
     {
       "property": "camarillo",
       "category": "sold",
-      "order": 8,
+      "order": 4,
       "address": "4300 Tujunga Ave, Studio City, CA 91604",
       "lat": 34.1479602,
       "lng": -118.378644,
@@ -222,25 +200,14 @@
       "place_id": "ChIJMQR2Yxu-woAR4E5Q_EgkrLs",
       "precision": "ROOFTOP",
       "needs_review": false
-    },
-    {
-      "property": "camarillo",
-      "category": "active",
-      "order": 4,
-      "address": "6651 Beck Ave, North Hollywood, CA 91606",
-      "lat": 34.1917731,
-      "lng": -118.3837772,
-      "place_id": "ChIJfS5qKdKVwoARLlW6ISSfBSM",
-      "precision": "ROOFTOP",
-      "needs_review": false
     }
   ],
   "renders": {
-    "images/maps-camarillo-sale-comps.png": "f375c8094f168d24d00b375d661ddf9568f4e23ccf155af0874fac13560e516a",
-    "images/maps-camarillo-sale-comps-tall.png": "72a9e98a47e9985b1a871a0c98505156a27badac5a539971f8c16b39823ae07d",
+    "images/maps-camarillo-sale-comps.png": "ec4ae14d23f28b9bd1a1f12e7b4ffc6c2182c69f87df8dd4a56745d68a5b6b2c",
+    "images/maps-camarillo-sale-comps-tall.png": "20679c7f3ad181068c2f2cfb222f41c66c48cf324ebfb84b6b7187f39dbb0e62",
     "images/maps-camarillo-rent-comps.png": "965efc533ba3cfe27301f27ac360bf381ff67283c55ee0437b25975f2f3af2dd",
     "images/maps-camarillo-rent-comps-tall.png": "5e9e40285e4b94ff91bc40116ad3d19f2deabc4d61502eef18877938e372baf1",
-    "images/maps-camarillo-active-comps.png": "d5cf5d70d26e6842580e5627ecfced39a5e6a59dda9903bf1bb9ebad6330c3c8",
-    "images/maps-camarillo-active-comps-tall.png": "6f714fba3dbe18eb73a3f11557e77aa44d1848222ee15d57db0d015a66aa1426"
+    "images/maps-camarillo-active-comps.png": "cf8953d8672ad7b5f2f5dcc79d3b20df9442188ec66176f3bf19a16583c4882a",
+    "images/maps-camarillo-active-comps-tall.png": "6894aa8bf964e9dd535f9218ec092a6235a1bcd8bdd8c02ef23c4fdda7d4f5d8"
   }
 }
